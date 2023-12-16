@@ -1,5 +1,20 @@
 #include <dt-bindings/pwm/pwm.h>
 
+
+/ {
+	chosen {
+        zmk,backlight = &backlight;
+    };
+	
+    backlight: pwmleds {
+        compatible = "pwm-leds";
+        pwm_led_0 {
+            pwms = <&pwm0 0 PWM_MSEC(10) PWM_POLARITY_NORMAL>;
+        };
+    };
+};
+
+
 &pinctrl {
     // Other pinctrl definitions for other hardware
     pwm0_default: pwm0_default {
@@ -21,6 +36,8 @@
     pinctrl-1 = <&pwm0_sleep>;
     pinctrl-names = "default", "sleep";
 };
+
+
 
 &spi2_default {
 	group1 {
