@@ -1,28 +1,8 @@
 {
-    "keyboard_name": "rev41lp",
-    "manufacturer": "cyril279",
-    "url": "https://github.com/cyril279/keyboards/tree/main/revlp/41_1350",
-    "maintainer": "cyril279",
-    "usb": {
-        "vid": "0xFA9D",
-        "pid": "0x5F10",
-        "device_version": "0.0.1"
-    },
-    "matrix_pins": {
-        "cols": ["D4", "C6", "D7", "E6", "B4", "B5"],
-        "rows": ["F4", "B2", "F5", "B3", "F6", "B1", "F7"]
-    },
-    "diode_direction": "COL2ROW",
-    "backlight": {
-        "pin": "B6",
-        "levels": 7,
-        "max_brightness": 150
-    },
-    "processor": "atmega32u4",
-    "bootloader": "caterina",
-    "layout_aliases": {
-        "LAYOUT_rev41lp": "LAYOUT"
-    },
+    "keyboard_name": "revxlp",
+    "manufacturer": "lpgalaxy",
+    "url": "https://gitlab.com/lpgalaxy/revxlp",
+    "maintainer": "lpgalaxy",
     "layouts": {
         "LAYOUT": {
             "layout": [
